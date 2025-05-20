@@ -1,9 +1,11 @@
 # tech-challenge-infra-secretsmanager
 
 ## Descrição
-Este repositório contém a criação de secrets no Secrets manager.
+Este repositório contém a criação de filas SQS para facilitarem a comunicação entre microsserviços.
 
-Este secret armazena a chave para geração e validação de tokens JWT.
+`created-customer-queue` - Fila para receber mensagens de criação de clientes.
+`created-order-queue` - Fila para receber mensagens de criação de pedidos.
+`processed-payment-queue` - Fila para receber mensagens de processamento de pagamentos.
 
 **Tecnologia:** Terraform
 
